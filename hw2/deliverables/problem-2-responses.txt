@@ -1,0 +1,130 @@
+# Problem 2.1
+
+Date/Time:
+  Arrival Time: Sep 20, 2020 17:02:07.461974006 CDT
+
+Client Implementation:
+OS: Kali Linux/GNU Rolling 2020.3
+Wireshark: 3.2.6
+Browser: Firefox 68.11.0esr
+
+Question #1:
+  The TLS version used was 1.2
+
+Question #2:
+The Client offered the following suites:
+Cipher Suites (18 suites)
+  Cipher Suite: TLS_AES_128_GCM_SHA256 (0x1301)
+  Cipher Suite: TLS_CHACHA20_POLY1305_SHA256 (0x1303)
+  Cipher Suite: TLS_AES_256_GCM_SHA384 (0x1302)
+  Cipher Suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 (0xc02b)
+  Cipher Suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (0xc02f)
+  Cipher Suite: TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 (0xcca9)
+  Cipher Suite: TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (0xcca8)
+  Cipher Suite: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 (0xc02c)
+  Cipher Suite: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (0xc030)
+  Cipher Suite: TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA (0xc00a)
+  Cipher Suite: TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA (0xc009)
+  Cipher Suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (0xc013)
+  Cipher Suite: TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (0xc014)
+  Cipher Suite: TLS_DHE_RSA_WITH_AES_128_CBC_SHA (0x0033)
+  Cipher Suite: TLS_DHE_RSA_WITH_AES_256_CBC_SHA (0x0039)
+  Cipher Suite: TLS_RSA_WITH_AES_128_CBC_SHA (0x002f)
+  Cipher Suite: TLS_RSA_WITH_AES_256_CBC_SHA (0x0035)
+  Cipher Suite: TLS_RSA_WITH_3DES_EDE_CBC_SHA (0x000a)
+
+
+Question #3:
+  The Server chose the cipher suite TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (0xc02f).
+  Therefore, the block cipher AES_128 was selected.
+
+Question #4:
+  The cipher mode GCM was selected.
+
+Question #5:
+  The server selected EC Diffie-Hellman with RSA for the key exchange.
+
+Question #6:
+  The MAC algorithm SHA256 was selected.
+
+Question #7:
+  padding: Used to pad a Client Hello to a desired size, in order to avoid bugs in implementation caused by other certain Client Hello sizes.
+
+  server_name: TLS does not provide a method for clients to tell a server the name of a server it is contacting, and this information may be useful for secure connections to servers that host multiple virtual sessions at the same address, so clients may include the 'server_name' extension.
+
+  status_request: An extension used by the client to request information on the status and validity of server certificates.
+
+
+# Problem 2.2
+
+Date/Time:
+Sep 20, 2020 17:40:27.158701107 CDT
+
+Client Implementation:
+OS: Kali Linux/GNU Rolling 2020.3
+Wireshark: 3.2.6
+Non-Browser: curl 7.72.0
+
+Question #1:
+  The TLS version used was 1.2
+
+Question #2:
+The Client offered the following suites:
+Cipher Suites (31 suites)
+    Cipher Suite: TLS_AES_256_GCM_SHA384 (0x1302)
+    Cipher Suite: TLS_CHACHA20_POLY1305_SHA256 (0x1303)
+    Cipher Suite: TLS_AES_128_GCM_SHA256 (0x1301)
+    Cipher Suite: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 (0xc02c)
+    Cipher Suite: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (0xc030)
+    Cipher Suite: TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 (0x009f)
+    Cipher Suite: TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 (0xcca9)
+    Cipher Suite: TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (0xcca8)
+    Cipher Suite: TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (0xccaa)
+    Cipher Suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 (0xc02b)
+    Cipher Suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (0xc02f)
+    Cipher Suite: TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 (0x009e)
+    Cipher Suite: TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 (0xc024)
+    Cipher Suite: TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (0xc028)
+    Cipher Suite: TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 (0x006b)
+    Cipher Suite: TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 (0xc023)
+    Cipher Suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (0xc027)
+    Cipher Suite: TLS_DHE_RSA_WITH_AES_128_CBC_SHA256 (0x0067)
+    Cipher Suite: TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA (0xc00a)
+    Cipher Suite: TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (0xc014)
+    Cipher Suite: TLS_DHE_RSA_WITH_AES_256_CBC_SHA (0x0039)
+    Cipher Suite: TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA (0xc009)
+    Cipher Suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (0xc013)
+    Cipher Suite: TLS_DHE_RSA_WITH_AES_128_CBC_SHA (0x0033)
+    Cipher Suite: TLS_RSA_WITH_AES_256_GCM_SHA384 (0x009d)
+    Cipher Suite: TLS_RSA_WITH_AES_128_GCM_SHA256 (0x009c)
+    Cipher Suite: TLS_RSA_WITH_AES_256_CBC_SHA256 (0x003d)
+    Cipher Suite: TLS_RSA_WITH_AES_128_CBC_SHA256 (0x003c)
+    Cipher Suite: TLS_RSA_WITH_AES_256_CBC_SHA (0x0035)
+    Cipher Suite: TLS_RSA_WITH_AES_128_CBC_SHA (0x002f)
+    Cipher Suite: TLS_EMPTY_RENEGOTIATION_INFO_SCSV (0x00ff)
+
+Question #3:
+  The Server chose the cipher suite TLS_RSA_WITH_AES_256_GCM_SHA384 (0x009d)
+  Therefore, the Server chose the block cipher AES_256
+
+Question #4:
+  The Cipher Mode GCM was selected.
+
+Question #5:
+  The key exchange was conducted through RSA.
+
+Question #6:
+  The MAC algorithm SHA384 was selected.
+
+Question #7:
+  signature_algorithms: An extension that indicates which signature algorithm may be used in digital signatures; this extension is similar to 'signature_algorithms_cert', except it only applies to CertificateVerify messages.
+
+  supported_versions: An extension used by the client to indicate which versions of TLS it supports and by the server to indicate which version it is using.
+
+  key_share: Contains the the cryptographic parameters of the endpoints.
+
+Question #8:
+  curl -ssl -X GET https://problem2-2.hw2.comp5370.org
+
+Question #9:
+When using curl, the client offered twice as many suites compared to using a browser, yet the server chose an RSA key-exchange as opposed to an elliptic-curve key-exchange. Also, the browser connection used TLS naturally, but when using curl, a command was passed in to force TLS. This implies that the browser connection is more secure than the non-browser connection. 
