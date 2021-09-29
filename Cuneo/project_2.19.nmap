@@ -1,0 +1,46 @@
+# Nmap 7.91 scan initiated Fri Apr  2 08:25:42 2021 as: nmap -vv -p- -sS -sU -sV --version-all --script vulners -sC -O -oA project_2.19 10.10.11.19
+Increasing send delay for 10.10.11.19 from 50 to 100 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.11.19 from 100 to 200 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.11.19 from 200 to 400 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.11.19 from 400 to 800 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for 10.10.11.19
+Host is up, received echo-reply ttl 63 (0.060s latency).
+Scanned at 2021-04-02 08:25:43 CDT for 66589s
+Not shown: 130982 closed ports, 83 open|filtered ports
+Reason: 65531 resets, 65451 port-unreaches and 83 no-responses
+PORT     STATE SERVICE REASON         VERSION
+22/tcp   open  ssh     syn-ack ttl 63 OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:8.2p1: 
+|     	CVE-2020-15778	6.8	https://vulners.com/cve/CVE-2020-15778
+|     	CVE-2020-12062	5.0	https://vulners.com/cve/CVE-2020-12062
+|     	CVE-2021-28041	4.6	https://vulners.com/cve/CVE-2021-28041
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|_    	MSF:AUXILIARY/SCANNER/SSH/FORTINET_BACKDOOR/	0.0	https://vulners.com/metasploit/MSF:AUXILIARY/SCANNER/SSH/FORTINET_BACKDOOR/	*EXPLOIT*
+80/tcp   open  http    syn-ack ttl 63 nginx
+|_http-trane-info: Problem with XML parsing of /evox/about
+8060/tcp open  http    syn-ack ttl 63 nginx 1.16.1
+|_http-server-header: nginx/1.16.1
+9094/tcp open  unknown syn-ack ttl 63
+9094/udp open  pc-duo  udp-response   Vector PC-Duo (Servername: Payload..SeqNo)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=4/3%OT=22%CT=1%CU=1%PV=Y%DS=2%DC=I%G=Y%TM=60681F74%P=x
+OS:86_64-pc-linux-gnu)SEQ(SP=104%GCD=2%ISR=102%TI=Z%CI=Z%II=I%TS=A)OPS(O1=M
+OS:54DST11NW7%O2=M54DST11NW7%O3=M54DNNT11NW7%O4=M54DST11NW7%O5=M54DST11NW7%
+OS:O6=M54DST11)WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)ECN(R=Y%
+OS:DF=Y%T=40%W=FAF0%O=M54DNNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=
+OS:0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF
+OS:=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=
+OS:%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%
+OS:IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 0.622 days (since Fri Apr  2 11:59:36 2021)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr  3 02:55:32 2021 -- 1 IP address (1 host up) scanned in 66590.22 seconds

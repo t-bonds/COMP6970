@@ -1,0 +1,81 @@
+# Nmap 7.91 scan initiated Tue Feb  9 12:40:31 2021 as: nmap -vv -p- -sS -sU -sV --version-all -sC -O -oA 11.23_scan_results 10.10.11.18
+Nmap scan report for 10.10.11.18
+Host is up, received echo-reply ttl 63 (0.042s latency).
+Scanned at 2021-02-09 12:40:31 CST for 66248s
+Not shown: 131039 closed ports
+Reason: 65533 resets and 65506 port-unreaches
+PORT      STATE         SERVICE REASON         VERSION
+22/tcp    open          ssh     syn-ack ttl 63 OpenSSH 8.2p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 48:ad:d5:b8:3a:9f:bc:be:f7:e8:20:1e:f6:bf:de:ae (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC82vTuN1hMqiqUfN+Lwih4g8rSJjaMjDQdhfdT8vEQ67urtQIyPszlNtkCDn6MNcBfibD/7Zz4r8lr1iNe/Afk6LJqTt3OWewzS2a1TpCrEbvoileYAl/Feya5PfbZ8mv77+MWEA+kT0pAw1xW9bpkhYCGkJQm9OYdcsEEg1i+kQ/ng3+GaFrGJjxqYaW1LXyXN1f7j9xG2f27rKEZoRO/9HOH9Y+5ru184QQXjW/ir+lEJ7xTwQA5U1GOW1m/AgpHIfI5j9aDfT/r4QMe+au+2yPotnOGBBJBz3ef+fQzj/Cq7OGRR96ZBfJ3i00B/Waw/RI19qd7+ybNXF/gBzptEYXujySQZSu92Dwi23itxJBolE6hpQ2uYVA8VBlF0KXESt3ZJVWSAsU3oguNCXtY7krjqPe6BZRy+lrbeska1bIGPZrqLEgptpKhz14UaOcH9/vpMYFdSKr24aMXvZBDK1GJg50yihZx8I9I367z0my8E89+TnjGFY2QTzxmbmU=
+|   256 b7:89:6c:0b:20:ed:49:b2:c1:86:7c:29:92:74:1c:1f (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBH2y17GUe6keBxOcBGNkWsliFwTRwUtQB3NXEhTAFLziGDfCgBV7B9Hp6GQMPGQXqMk7nnveA8vUz0D7ug5n04A=
+|   256 18:cd:9d:08:a6:21:a8:b8:b6:f7:9f:8d:40:51:54:fb (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKfXa+OM5/utlol5mJajysEsV4zb/L0BJ1lKxMPadPvR
+80/tcp    open          http    syn-ack ttl 63 nginx 1.18.0 (Ubuntu)
+|_http-favicon: Unknown favicon MD5: 47B51975A37B8582E8514D89DF9956A5
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+| http-title: LibreNMS
+|_Requested resource was http://10.10.11.18/login
+|_http-trane-info: Problem with XML parsing of /evox/about
+161/udp   open          snmp    udp-response   net-snmp; net-snmp SNMPv3 server
+| snmp-info: 
+|   enterprise: net-snmp
+|   engineIDFormat: unknown
+|   engineIDData: 8c15fa540a37105f00000000
+|   snmpEngineBoots: 14
+|_  snmpEngineTime: 2d06h38m17s
+921/udp   open|filtered unknown no-response
+1954/udp  open|filtered abr-api no-response
+2423/udp  open|filtered rnrp    no-response
+11657/udp open|filtered unknown no-response
+12063/udp open|filtered unknown no-response
+14720/udp open|filtered unknown no-response
+14730/udp open|filtered unknown no-response
+16042/udp open|filtered unknown no-response
+17735/udp open|filtered unknown no-response
+21315/udp open|filtered unknown no-response
+22150/udp open|filtered unknown no-response
+24569/udp open|filtered unknown no-response
+28539/udp open|filtered unknown no-response
+31268/udp open|filtered unknown no-response
+34178/udp open|filtered unknown no-response
+34493/udp open|filtered unknown no-response
+35259/udp open|filtered unknown no-response
+38043/udp open|filtered unknown no-response
+39644/udp open|filtered unknown no-response
+40960/udp open|filtered unknown no-response
+46978/udp open|filtered unknown no-response
+50122/udp open|filtered unknown no-response
+52062/udp open|filtered unknown no-response
+53640/udp open|filtered unknown no-response
+55168/udp open|filtered unknown no-response
+59500/udp open|filtered unknown no-response
+60188/udp open|filtered unknown no-response
+61166/udp open|filtered unknown no-response
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=2/10%OT=22%CT=1%CU=1%PV=Y%DS=2%DC=I%G=Y%TM=6023D9E7%P=
+OS:x86_64-pc-linux-gnu)SEQ(SP=106%GCD=1%ISR=103%TI=Z%CI=Z%II=I%TS=A)OPS(O1=
+OS:M54DST11NW7%O2=M54DST11NW7%O3=M54DNNT11NW7%O4=M54DST11NW7%O5=M54DST11NW7
+OS:%O6=M54DST11)WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)ECN(R=Y
+OS:%DF=Y%T=40%W=FAF0%O=M54DNNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD
+OS:=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%D
+OS:F=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O
+OS:=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40
+OS:%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 21.445 days (since Tue Jan 19 20:24:09 2021)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb 10 07:04:39 2021 -- 1 IP address (1 host up) scanned in 66248.08 seconds

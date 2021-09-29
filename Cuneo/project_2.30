@@ -1,0 +1,107 @@
+# Nmap 7.91 scan initiated Sun Apr  4 12:44:45 2021 as: nmap -vv -p- -sS -sU -sV --version-all --script vulners -sC -O -oN project_2.30 10.10.11.30
+Nmap scan report for 10.10.11.30
+Host is up, received echo-reply ttl 63 (0.061s latency).
+Scanned at 2021-04-04 12:44:45 CDT for 66250s
+Not shown: 130908 closed ports, 129 filtered ports
+Reason: 65533 resets, 65375 port-unreaches and 129 host-unreaches
+PORT      STATE         SERVICE     REASON         VERSION
+22/tcp    open          ssh         syn-ack ttl 63 OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:7.9p1: 
+|     	EXPLOITPACK:98FE96309F9524B8C84C508837551A19	5.8	https://vulners.com/exploitpack/EXPLOITPACK:98FE96309F9524B8C84C508837551A19	*EXPLOIT*
+|     	EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	5.8	https://vulners.com/exploitpack/EXPLOITPACK:5330EA02EBDE345BFC9D6DDDD97F9E97	*EXPLOIT*
+|     	EDB-ID:46516	5.8	https://vulners.com/exploitdb/EDB-ID:46516	*EXPLOIT*
+|     	CVE-2019-6111	5.8	https://vulners.com/cve/CVE-2019-6111
+|     	CVE-2019-16905	4.4	https://vulners.com/cve/CVE-2019-16905
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2019-6110	4.0	https://vulners.com/cve/CVE-2019-6110
+|     	CVE-2019-6109	4.0	https://vulners.com/cve/CVE-2019-6109
+|     	CVE-2018-20685	2.6	https://vulners.com/cve/CVE-2018-20685
+|     	PACKETSTORM:151227	0.0	https://vulners.com/packetstorm/PACKETSTORM:151227	*EXPLOIT*
+|     	EDB-ID:46193	0.0	https://vulners.com/exploitdb/EDB-ID:46193	*EXPLOIT*
+|_    	1337DAY-ID-32009	0.0	https://vulners.com/zdt/1337DAY-ID-32009	*EXPLOIT*
+80/tcp    open          http        syn-ack ttl 63 Apache httpd 2.4.38 ((Debian))
+|_http-server-header: Apache/2.4.38 (Debian)
+| vulners: 
+|   cpe:/a:apache:http_server:2.4.38: 
+|     	CVE-2020-11984	7.5	https://vulners.com/cve/CVE-2020-11984
+|     	EXPLOITPACK:44C5118F831D55FAF4259C41D8BDA0AB	7.2	https://vulners.com/exploitpack/EXPLOITPACK:44C5118F831D55FAF4259C41D8BDA0AB	*EXPLOIT*
+|     	CVE-2019-0211	7.2	https://vulners.com/cve/CVE-2019-0211
+|     	1337DAY-ID-32502	7.2	https://vulners.com/zdt/1337DAY-ID-32502	*EXPLOIT*
+|     	CVE-2019-10082	6.4	https://vulners.com/cve/CVE-2019-10082
+|     	CVE-2019-10097	6.0	https://vulners.com/cve/CVE-2019-10097
+|     	CVE-2019-0217	6.0	https://vulners.com/cve/CVE-2019-0217
+|     	CVE-2019-0215	6.0	https://vulners.com/cve/CVE-2019-0215
+|     	EDB-ID:47689	5.8	https://vulners.com/exploitdb/EDB-ID:47689	*EXPLOIT*
+|     	CVE-2020-1927	5.8	https://vulners.com/cve/CVE-2020-1927
+|     	CVE-2019-10098	5.8	https://vulners.com/cve/CVE-2019-10098
+|     	1337DAY-ID-33577	5.8	https://vulners.com/zdt/1337DAY-ID-33577	*EXPLOIT*
+|     	CVE-2020-9490	5.0	https://vulners.com/cve/CVE-2020-9490
+|     	CVE-2020-1934	5.0	https://vulners.com/cve/CVE-2020-1934
+|     	CVE-2019-10081	5.0	https://vulners.com/cve/CVE-2019-10081
+|     	CVE-2019-0220	5.0	https://vulners.com/cve/CVE-2019-0220
+|     	CVE-2019-0196	5.0	https://vulners.com/cve/CVE-2019-0196
+|     	CVE-2019-0197	4.9	https://vulners.com/cve/CVE-2019-0197
+|     	EDB-ID:47688	4.3	https://vulners.com/exploitdb/EDB-ID:47688	*EXPLOIT*
+|     	CVE-2020-11993	4.3	https://vulners.com/cve/CVE-2020-11993
+|     	CVE-2019-10092	4.3	https://vulners.com/cve/CVE-2019-10092
+|     	1337DAY-ID-33575	4.3	https://vulners.com/zdt/1337DAY-ID-33575	*EXPLOIT*
+|     	PACKETSTORM:152441	0.0	https://vulners.com/packetstorm/PACKETSTORM:152441	*EXPLOIT*
+|     	EDB-ID:46676	0.0	https://vulners.com/exploitdb/EDB-ID:46676	*EXPLOIT*
+|     	1337DAY-ID-663	0.0	https://vulners.com/zdt/1337DAY-ID-663	*EXPLOIT*
+|     	1337DAY-ID-601	0.0	https://vulners.com/zdt/1337DAY-ID-601	*EXPLOIT*
+|     	1337DAY-ID-4533	0.0	https://vulners.com/zdt/1337DAY-ID-4533	*EXPLOIT*
+|     	1337DAY-ID-3109	0.0	https://vulners.com/zdt/1337DAY-ID-3109	*EXPLOIT*
+|_    	1337DAY-ID-2237	0.0	https://vulners.com/zdt/1337DAY-ID-2237	*EXPLOIT*
+3278/udp  open|filtered lkcmserver  no-response
+6251/udp  open|filtered tl1-raw-ssl no-response
+6946/udp  open|filtered bioserver   no-response
+7654/udp  open|filtered unknown     no-response
+12359/udp open|filtered unknown     no-response
+16857/udp open|filtered unknown     no-response
+18284/udp open|filtered unknown     no-response
+18529/udp open|filtered unknown     no-response
+18886/udp open|filtered unknown     no-response
+19058/udp open|filtered unknown     no-response
+20308/udp open|filtered unknown     no-response
+22634/udp open|filtered unknown     no-response
+25536/udp open|filtered unknown     no-response
+28623/udp open|filtered unknown     no-response
+29595/udp open|filtered unknown     no-response
+30861/udp open|filtered unknown     no-response
+33323/udp open|filtered unknown     no-response
+34458/udp open|filtered unknown     no-response
+35234/udp open|filtered unknown     no-response
+37444/udp open|filtered unknown     no-response
+38551/udp open|filtered unknown     no-response
+40509/udp open|filtered unknown     no-response
+41072/udp open|filtered unknown     no-response
+43157/udp open|filtered unknown     no-response
+51506/udp open|filtered unknown     no-response
+55556/udp open|filtered unknown     no-response
+57939/udp open|filtered unknown     no-response
+58784/udp open|filtered unknown     no-response
+62733/udp open|filtered unknown     no-response
+63466/udp open|filtered unknown     no-response
+63620/udp open|filtered unknown     no-response
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=4/5%OT=22%CT=1%CU=1%PV=Y%DS=2%DC=I%G=Y%TM=606AFDD7%P=x
+OS:86_64-pc-linux-gnu)SEQ(SP=103%GCD=1%ISR=105%TI=Z%CI=Z%II=I%TS=A)OPS(O1=M
+OS:54DST11NW7%O2=M54DST11NW7%O3=M54DNNT11NW7%O4=M54DST11NW7%O5=M54DST11NW7%
+OS:O6=M54DST11)WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)ECN(R=Y%
+OS:DF=Y%T=40%W=FAF0%O=M54DNNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=
+OS:0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF
+OS:=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=
+OS:%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%
+OS:IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 8.306 days (since Sat Mar 27 23:48:16 2021)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Apr  5 07:08:55 2021 -- 1 IP address (1 host up) scanned in 66249.91 seconds
