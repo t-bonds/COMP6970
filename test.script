@@ -1,0 +1,80 @@
+Script started on 2022-03-21 20:00:03-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="336" LINES="18"]
+[?2004h[38;5;240m heckin [0m[38;5;254m ~/comp_7500/project3 [0m[48;5;m[0m ./aubatch
+[?2004lPress ? For Help Menu: 
+> test ./benchmark fcfs 5 10
+Job ./benchmark/job_5 Submitted.
+Job ./benchmark/job_60 Submitted.
+Job ./benchmark/job_20 Submitted.
+Job ./benchmark/job_30 Submitted.
+Job ./benchmark/job_120 Submitted.
+> list
+Scheduling Policy: FCFS
+Jobs In Queue: 4
+Job	CPU Time	Pri	Arrival Time	Status
+1	5		10	20:00:19	Running
+2	60		3	20:00:20	Waiting
+3	20		8	20:00:21	Waiting
+4	30		8	20:00:22	Waiting
+5	120		4	20:00:23	Waiting
+> list
+Scheduling Policy: FCFS
+Jobs In Queue: 0
+> quit
+Waiting Time Avg: 	42.25s
+Turnaround Time Avg: 	71.00s
+Throughput: 	0.0141 No./s
+Total Jobs Completed: 4
+[?2004h[38;5;240m heckin [0m[38;5;254m ~/comp_7500/project3 [0m[48;5;m[0m ./aubatch
+[?2004lPress ? For Help Menu: 
+> test ./benchmark sjf 5 10
+Job ./benchmark/job_5 Submitted.
+Job ./benchmark/job_60 Submitted.
+Job ./benchmark/job_20 Submitted.
+Job ./benchmark/job_30 Submitted.
+Job ./benchmark/job_120 Submitted.
+> list
+Scheduling Policy: SJF
+Jobs In Queue: 4
+Job	CPU Time	Pri	Arrival Time	Status
+1	5		5	20:04:34	Running
+3	20		1	20:04:36	Waiting
+4	30		2	20:04:37	Waiting
+2	60		2	20:04:35	Waiting
+5	120		7	20:04:38	Waiting
+> list
+Scheduling Policy: SJF
+Jobs In Queue: 0
+> quit
+Waiting Time Avg: 	43.00s
+Turnaround Time Avg: 	90.00s
+Throughput: 	0.0111 No./s
+Total Jobs Completed: 5
+[?2004h[38;5;240m heckin [0m[38;5;254m ~/comp_7500/project3 [0m[48;5;m[0m ./aubatch
+[?2004lPress ? For Help Menu: 
+> test ./benchmark pri 5 10
+Job ./benchmark/job_5 Submitted.
+Job ./benchmark/job_60 Submitted.
+Job ./benchmark/job_20 Submitted.
+Job ./benchmark/job_30 Submitted.
+Job ./benchmark/job_120 Submitted.
+> list
+Scheduling Policy: Priority
+Jobs In Queue: 4
+Job	CPU Time	Pri	Arrival Time	Status
+4	30		2	20:10:48	Running
+1	5		5	20:10:45	Waiting
+5	120		5	20:10:49	Waiting
+2	60		6	20:10:46	Waiting
+3	20		8	20:10:47	Waiting
+> list
+Scheduling Policy: Priority
+Jobs In Queue: 0
+> quit
+Waiting Time Avg: 	90.00s
+Turnaround Time Avg: 	137.00s
+Throughput: 	0.0073 No./s
+Total Jobs Completed: 5
+[?2004h[38;5;240m heckin [0m[38;5;254m ~/comp_7500/project3 [0m[48;5;m[0m exit
+[?2004lexit
+
+Script done on 2022-03-21 20:27:31-05:00 [COMMAND_EXIT_CODE="0"]

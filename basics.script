@@ -1,0 +1,52 @@
+Script started on 2022-03-21 19:29:13-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="156" LINES="18"]
+[?2004h[38;5;240m heckin [0m[38;5;254m ~/comp_7500/project3 [0m[48;5;m[0m make build
+[?2004l[H[2J[3Jgcc -pthread -o aubatch main.c command_line_parse.c dispatch.c schedule.c info.c eval.c 
+BUILD COMPLETE
+[?2004h[38;5;240m heckin [0m[38;5;254m ~/comp_7500/project3 [0m[48;5;m[0m ./aubatch
+[?2004lPress ? For Help Menu: 
+> help
+
+AUBatch Help Menu
+    [run] <job> <time> <priority>        
+    [list] List Job Status               
+    [fcfs] Change Policy to FCFS         
+    [sjf] Change Policy To SJF           
+    [pri] Change Policy To Priority      
+    [quit] Exit AUBatch                  
+    [help] Print Help Menu               
+
+> ?
+
+AUBatch Help Menu
+    [run] <job> <time> <priority>        
+    [list] List Job Status               
+    [fcfs] Change Policy to FCFS         
+    [sjf] Change Policy To SJF           
+    [pri] Change Policy To Priority      
+    [quit] Exit AUBatch                  
+    [help] Print Help Menu               
+
+> list
+Scheduling Policy: FCFS
+Jobs In Queue: 0
+> fcfs
+FCFS Is Current Policy!
+> sjf
+Policy Changed To SJF
+0 Waiting Jobs Rescheduled
+> pri
+Policy Changed To pri
+
+0 Waiting Jobs Rescheduled
+> foo
+foo
+: Command Not Found
+> quit
+Waiting Time Avg: 	0.00s
+Turnaround Time Avg: 	0.00s
+Throughput: 	0.0000 No./s
+Total Jobs Completed: 0
+[?2004h[38;5;240m heckin [0m[38;5;254m ~/comp_7500/project3 [0m[48;5;m[0m exit
+[?2004lexit
+
+Script done on 2022-03-21 19:30:00-05:00 [COMMAND_EXIT_CODE="0"]

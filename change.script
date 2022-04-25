@@ -1,0 +1,124 @@
+Script started on 2022-03-21 20:31:03-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="336" LINES="18"]
+[?2004h[38;5;240m heckin [0m[38;5;254m ~/comp_7500/project3 [0m[48;5;m[0m ./aubatch
+[?2004lPress ? For Help Menu: 
+> test ./benchmark fcfs 5 10
+Job ./benchmark/job_5 Submitted.
+Job ./benchmark/job_60 Submitted.
+Job ./benchmark/job_20 Submitted.
+Job ./benchmark/job_30 Submitted.
+Job ./benchmark/job_120 Submitted.
+> list
+Scheduling Policy: FCFS
+Jobs In Queue: 4
+Job	CPU Time	Pri	Arrival Time	Status
+1	5		1	20:32:21	Running
+2	60		4	20:32:22	Waiting
+3	20		6	20:32:23	Waiting
+4	30		10	20:32:24	Waiting
+5	120		1	20:32:25	Waiting
+> sjf
+Policy Changed To SJF
+4 Waiting Jobs Rescheduled
+> list
+Scheduling Policy: SJF
+Jobs In Queue: 4
+Job	CPU Time	Pri	Arrival Time	Status
+1	5		1	20:32:21	Running
+3	20		6	20:32:23	Waiting
+4	30		10	20:32:24	Waiting
+2	60		4	20:32:22	Waiting
+5	120		1	20:32:25	Waiting
+> lsit   ist
+Scheduling Policy: SJF
+Jobs In Queue: 0
+> quit
+Waiting Time Avg: 	43.00s
+Turnaround Time Avg: 	90.00s
+Throughput: 	0.0111 No./s
+Total Jobs Completed: 5
+[?2004h[38;5;240m heckin [0m[38;5;254m ~/comp_7500/project3 [0m[48;5;m[0m ./aubatch
+[?2004lPress ? For Help Menu: 
+> test ./benchmark sjf 5 10
+Job ./benchmark/job_5 Submitted.
+Job ./benchmark/job_60 Submitted.
+Job ./benchmark/job_20 Submitted.
+Job ./benchmark/job_30 Submitted.
+Job ./benchmark/job_120 Submitted.
+> list
+Scheduling Policy: SJF
+Jobs In Queue: 4
+Job	CPU Time	Pri	Arrival Time	Status
+1	5		7	20:37:38	Running
+3	20		9	20:37:40	Waiting
+4	30		3	20:37:41	Waiting
+2	60		4	20:37:39	Waiting
+5	120		5	20:37:42	Waiting
+> fcfs
+Policy Changed To FCFS
+3 Waiting Jobs Rescheduled
+> list
+Scheduling Policy: FCFS
+Jobs In Queue: 3
+Job	CPU Time	Pri	Arrival Time	Status
+3	20		9	20:37:40	Running
+2	60		4	20:37:39	Waiting
+4	30		3	20:37:41	Waiting
+5	120		5	20:37:42	Waiting
+> list
+Scheduling Policy: FCFS
+Jobs In Queue: 0
+> quit
+Waiting Time Avg: 	32.25s
+Turnaround Time Avg: 	61.00s
+Throughput: 	0.0164 No./s
+Total Jobs Completed: 4
+[?2004h[38;5;240m heckin [0m[38;5;254m ~/comp_7500/project3 [0m[48;5;m[0m ./aubatch
+[?2004lPress ? For Help Menu: 
+> test ./benchmark fcfs 5 10
+Job ./benchmark/job_5 Submitted.
+Job ./benchmark/job_60 Submitted.
+Job ./benchmark/job_20 Submitted.
+Job ./benchmark/job_30 Submitted.
+Job ./benchmark/job_120 Submitted.
+> list
+Scheduling Policy: FCFS
+Jobs In Queue: 4
+Job	CPU Time	Pri	Arrival Time	Status
+1	5		8	20:41:02	Running
+2	60		4	20:41:03	Waiting
+3	20		6	20:41:04	Waiting
+4	30		5	20:41:05	Waiting
+5	120		5	20:41:06	Waiting
+> pri
+Policy Changed To pri
+
+4 Waiting Jobs Rescheduled
+> list
+Scheduling Policy: pri
+
+Jobs In Queue: 3
+Job	CPU Time	Pri	Arrival Time	Status
+2	60		4	20:41:03	Running
+4	30		5	20:41:05	Waiting
+5	120		5	20:41:06	Waiting
+3	20		6	20:41:04	Waiting
+> list
+Scheduling Policy: pri
+
+Jobs In Queue: 1
+Job	CPU Time	Pri	Arrival Time	Status
+5	120		5	20:41:06	Running
+3	20		6	20:41:04	Waiting
+> list
+Scheduling Policy: pri
+
+Jobs In Queue: 0
+> quit
+Waiting Time Avg: 	79.00s
+Turnaround Time Avg: 	126.00s
+Throughput: 	0.0079 No./s
+Total Jobs Completed: 5
+[?2004h[38;5;240m heckin [0m[38;5;254m ~/comp_7500/project3 [0m[48;5;m[0m exit
+[?2004lexit
+
+Script done on 2022-03-21 20:48:25-05:00 [COMMAND_EXIT_CODE="0"]

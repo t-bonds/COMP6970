@@ -1,0 +1,166 @@
+Script started on 2022-03-21 19:38:02-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="336" LINES="18"]
+[?2004h[38;5;240m heckin [0m[38;5;254m ~/comp_7500/project3 [0m[48;5;m[0m ./aubatch
+[?2004lPress ? For Help Menu: 
+> fcfs
+FCFS Is Current Policy!
+> run jobs/job_20 20 3
+Job jobs/job_20 Submitted.
+Estimated Wait Time: 0s
+Policy: FCFS
+> run jobs/job_20 20 6
+Job jobs/job_20 Submitted.
+Estimated Wait Time: 0s
+Policy: FCFS
+> run jobs/job_20 20 9
+Job jobs/job_20 Submitted.
+Estimated Wait Time: 20s
+Policy: FCFS
+> list
+Scheduling Policy: FCFS
+Jobs In Queue: 2
+Job	CPU Time	Pri	Arrival Time	Status
+1	20		3	19:38:16	Running
+2	20		6	19:38:22	Waiting
+3	20		9	19:38:28	Waiting
+> list
+Scheduling Policy: FCFS
+Jobs In Queue: 0
+> quit
+Waiting Time Avg: 	14.00s
+Turnaround Time Avg: 	34.00s
+Throughput: 	0.0294 No./s
+Total Jobs Completed: 3
+[?2004h[38;5;240m heckin [0m[38;5;254m ~/comp_7500/project3 [0m[48;5;m[0m ex[K[K./aubatch
+[?2004lPress ? For Help Menu: 
+> sjf
+Policy Changed To SJF
+0 Waiting Jobs Rescheduled
+> run jobs/job_20 20 3
+Job jobs/job_20 Submitted.
+Estimated Wait Time: 0s
+Policy: SJF
+> run jobs/job_20 20 5
+Job jobs/job_20 Submitted.
+Estimated Wait Time: 0s
+Policy: SJF
+> run jobs/job_20 20 7
+Job jobs/job_20 Submitted.
+Estimated Wait Time: 20s
+Policy: SJF
+> list
+Scheduling Policy: SJF
+Jobs In Queue: 2
+Job	CPU Time	Pri	Arrival Time	Status
+1	20		3	19:41:10	Running
+2	20		5	19:41:15	Waiting
+3	20		7	19:41:22	Waiting
+> list
+Scheduling Policy: SJF
+Jobs In Queue: 0
+> quit
+Waiting Time Avg: 	14.33s
+Turnaround Time Avg: 	34.33s
+Throughput: 	0.0291 No./s
+Total Jobs Completed: 3
+[?2004h[38;5;240m heckin [0m[38;5;254m ~/comp_7500/project3 [0m[48;5;m[0m ./aubatch
+[?2004lPress ? For Help Menu: 
+> pri
+Policy Changed To pri
+
+0 Waiting Jobs Rescheduled
+> run jobs_jo   /job_20 20 8
+Job jobs/job_20 Submitted.
+Estimated Wait Time: 0s
+Policy: pri
+
+> run jobs/job_20 20 5
+Job jobs/job_20 Submitted.
+Estimated Wait Time: 0s
+Policy: pri
+
+> run job/job_20 20 9
+Job job/job_20 Submitted.
+Estimated Wait Time: 20s
+Policy: pri
+
+> list
+Scheduling Policy: pri
+
+Jobs In Queue: 2
+Job	CPU Time	Pri	Arrival Time	Status
+1	20		8	19:44:03	Running
+2	20		5	19:44:09	Waiting
+3	20		9	19:44:18	Waiting
+> list
+Scheduling Policy: pri
+
+Jobs In Queue: 0
+> quit
+Waiting Time Avg: 	13.00s
+Turnaround Time Avg: 	26.33s
+Throughput: 	0.0380 No./s
+Total Jobs Completed: 3
+[?2004h[38;5;240m heckin [0m[38;5;254m ~/comp_7500/project3 [0m[48;5;m[0m ./aubatch
+[?2004lPress ? For Help Menu: 
+> run job_ /job_30 30 8
+Job job/job_30 Submitted.
+Estimated Wait Time: 0s
+Policy: FCFS
+> run jobs/job_60 60 5
+Job jobs/job_60 Submitted.
+Estimated Wait Time: 0s
+Policy: FCFS
+> run jobs/job_120 120 3
+Job jobs/job_120 Submitted.
+Estimated Wait Time: 0s
+Policy: FCFS
+> list
+Scheduling Policy: FCFS
+Jobs In Queue: 1
+Job	CPU Time	Pri	Arrival Time	Status
+2	60		5	19:49:29	Running
+3	120		3	19:49:38	Waiting
+> list
+Scheduling Policy: FCFS
+Jobs In Queue: 0
+> quit
+Waiting Time Avg: 	17.00s
+Turnaround Time Avg: 	77.00s
+Throughput: 	0.0130 No./s
+Total Jobs Completed: 3
+[?2004h[38;5;240m heckin [0m[38;5;254m ~/comp_7500/project3 [0m[48;5;m[0m ./aubatch
+[?2004lPress ? For Help Menu: 
+> run jobs/job_120                sjf
+Policy Changed To SJF
+0 Waiting Jobs Rescheduled
+> run jobs/job_120 120 8
+Job jobs/job_120 Submitted.
+Estimated Wait Time: 0s
+Policy: SJF
+> run jobs/job_60 60 4
+Job jobs/job_60 Submitted.
+Estimated Wait Time: 0s
+Policy: SJF
+> run jobs/job_30 30 4
+Job jobs/job_30 Submitted.
+Estimated Wait Time: 0s
+Policy: SJF
+> list
+Scheduling Policy: SJF
+Jobs In Queue: 2
+Job	CPU Time	Pri	Arrival Time	Status
+1	120		8	19:53:54	Running
+3	30		4	19:54:08	Waiting
+2	60		4	19:54:01	Waiting
+> list
+Scheduling Policy: SJF
+Jobs In Queue: 0
+> quit
+Waiting Time Avg: 	53.00s
+Turnaround Time Avg: 	128.00s
+Throughput: 	0.0078 No./s
+Total Jobs Completed: 2
+[?2004h[38;5;240m heckin [0m[38;5;254m ~/comp_7500/project3 [0m[48;5;m[0m exit
+[?2004lexit
+
+Script done on 2022-03-21 19:57:12-05:00 [COMMAND_EXIT_CODE="0"]
